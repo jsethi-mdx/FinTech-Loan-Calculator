@@ -24,7 +24,7 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/fintech-loan-calculator:latestruns-on: ubuntu-latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/fintech-loan-calculator:latest
     
   test:
     runs-on: ubuntu-latest
