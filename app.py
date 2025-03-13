@@ -18,7 +18,7 @@ def loan():
         interest_rate = float(request.args.get('rate', 0))
         years = int(request.args.get('years', 0))
         monthly_payment = calculate_loan(loan_amount, interest_rate, years)
-        return jsonify({"monthly_payment": monthly_payment})
+        return jsonify({"monthly_payments": monthly_payment})
     except Exception as e:
         return jsonify({"error": str(e)})
 
